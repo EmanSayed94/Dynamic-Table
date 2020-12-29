@@ -52,6 +52,22 @@ const DynamicTable = () => {
       setCurrentRow(increaseRowIndex)
     }
   }
+  const handleKeyBoardNavigation = (e) => {
+    switch (e.keyCode) {
+      case 37:
+        HandleLeftArrowClick()
+        break
+      case 38:
+        handleUpArrowClick()
+        break
+      case 39:
+        handleRightArrowClick()
+        break
+      case 40:
+        handleDownArrowClick()
+        break
+    }
+  }
 
   const resetValues = () => {
     setCurrentRow(0)
@@ -61,7 +77,7 @@ const DynamicTable = () => {
   if (rows.length > 0 && columns.length > 0) disableArrows = false
 
   return (
-    <div className="container">
+    <div className="container" onKeyUp={handleKeyBoardNavigation}>
       <div className="input-fields">
         <label>Rows</label>
         <input
