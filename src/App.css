@@ -34,3 +34,29 @@ table td{
 .activeCell{
 border:2px solid blue;
 }
+
+
+.arrows-container{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.arrow{
+  font-size: 25px;
+}
+.middle-arrows{
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+}
+button:focus{
+  outline: none;
+}
+button:hover{
+  cursor: pointer;
+}
