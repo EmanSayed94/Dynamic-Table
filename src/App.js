@@ -1,6 +1,5 @@
-import logo from './logo.svg'
 import './App.css'
-import DynamicTable from './components/Dynamic-Table/index'
+import DynamicTable from './components/DynamicTable/index'
 
 function App() {
   return <DynamicTable />
